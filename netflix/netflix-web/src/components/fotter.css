@@ -1,0 +1,54 @@
+.fotter{
+  padding: 20px;
+ color: #808080;
+}
+.fotter-container{
+color: #808080; 
+ display: flex;
+  gap: 170px;
+  font-size: 16px;
+  justify-content: center;
+}
+.fotter-container div ul li{
+  line-height: 36px;
+}
+.fotter-container div ul li:hover{
+color: #fff;
+font-size: 17px;
+ }
+.fotter-icon{
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.copyright{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+   font-size: 18px;  
+   margin-top: 30px;
+}
+@media (max-width:700px){
+  .fotter-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+  .fotter-icon{
+    font-size: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap:60px
+  }
+  .fotter-icon svg { 
+    /* MUI icons are SVGs, so we target the svg tag */
+    font-size: 40px; 
+    transition: transform 0.2s;
+  }
+  .copyright{
+  font-size: 25px;  
+}
+}

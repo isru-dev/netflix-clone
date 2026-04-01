@@ -7,14 +7,9 @@
 }
 .header{
   background-color: transparent;
-  background-color: black;
-    color: white;
-
- 
- 
-  height: 100px;
- 
-
+ background-color: #111;
+   color: #808080; 
+height: 100px;
 }
 .header-container{
 display: flex;
@@ -30,6 +25,13 @@ height: 100%;
   align-items: center;
   gap: 20px;
 
+}
+.left-side ul li{
+  font-size: 18px;
+}
+.left-side ul li:hover{
+  font-size: 19px;
+  color: #fff;
 }
 ul li {
   list-style-type: none;
