@@ -1,0 +1,81 @@
+.banner {
+  color: white;
+  object-fit: contain;
+  height: 448px; /* Standard Netflix height */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_container {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+  z-index: 1; /* Stay above the background */
+}
+
+.banner_name {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner_descrition{
+ max-width: 360px;
+ height: 120px;
+ font-size: 18px;
+ line-height:20px;
+}
+
+/* Button Styling */
+.button_container {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.banner_button {
+  cursor: pointer;
+  color: #fff !important; /* Material UI override */
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  background-color: rgba(51, 51, 51, 0.5) !important;
+  transition: all 0.2s;
+  font-size: 16px;
+   padding: 13px 60px !important; /* Force the size */
+  text-transform: none !important;
+  font-size: 18px !important;
+}
+.banner_mylist{
+  background-color: rgb(82, 76, 76) !important;
+  color: white !important;
+ padding: 13px 60px !important;  /* Force the size */
+  text-transform: none !important;
+   font-size: 18px !important;
+}
+
+.banner_button:hover {
+  color: #000 !important;
+  background-color: #e6e6e6 !important;
+}
+.banner_mylist:hover {
+  color: #e8dede !important;
+  background-color: #3f3939 !important;
+}
+
+/* The "Secret Sauce" - Bottom Fade */
+.bottom_fade {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
