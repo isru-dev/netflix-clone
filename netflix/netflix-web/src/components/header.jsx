@@ -10,8 +10,10 @@ export function Header() {
     <div className="header">
       <div className='header-container'>
         <div className='left-side'>
-          <ul>
-            <img src={logo} alt="netflix logo" className='img' />
+       
+
+          <ul className='nav-links'>
+             <img src={logo} alt="netflix logo" className='img' />
             <li>Home</li>
             <li>TvShows</li>
             <li>Movies</li>

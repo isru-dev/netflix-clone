@@ -1,0 +1,91 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+/* 1. The container for posters
+/* Allows horizontal scrolling */
+*/
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll; 
+  padding: 20px;
+}
+
+/* 2. Hide scrollbar for Chrome, Safari and Opera */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* 3. Base poster style (Horizontal ones) */
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px; /* Small height for backdrop images */
+  margin-right: 10px;
+  transition: transform 450ms; /* Smooth "increase visibility" effect */
+}
+
+.row_poster:hover {
+  transform: scale(1.08); /* Slight zoom on hover */
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* 4. The "Netflix Originals" Tall Effect */
+.row_posterLarge {
+  max-height: 250px; /* Much taller than the other rows */
+}
+
+/* 5. Enhanced visibility on hover for the tall row */
+.row_posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+/* 6. Lower opacity for non-hovered posters to make the hovered one pop */
+.row_posters:hover .row_poster {
+  opacity: 0.5; /* Dims all posters when you hover over the row... */
+}
+
+.row_posters .row_poster:hover {
+  opacity: 1; /* ...except the one your mouse is actually on! */
+}
+/* Specific style for the TALL posters (Netflix Originals) */
+.row_posterLarge {
+  /* Increased from 250px to 350px for more impact */
+  max-height: 350px; 
+}
+
+/* Make the hover effect even more pronounced for the large ones */
+.row_posterLarge:hover {
+  transform: scale(1.12); /* Slightly more zoom than the standard rows */
+  opacity: 1;
+}
+
+/* Adjust the row padding so the tall posters don't get cut off when zooming */
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+    overflow-x: scroll;
+
+  padding: 30px; /* Increased padding to give the zoom room to breathe */
+}
+
+@media (max-width: 768px) {
+  .row_poster {
+    max-height: 80px; /* Smaller horizontal posters for mobile */
+  }
+  .row_posterLarge {
+    max-height: 200px; /* Smaller tall posters for mobile */
+  }
+  .row_title {
+    font-size: 1.2rem; /* Smaller headings */
+  }
+}
+@media (hover: hover) {
+  .row_poster:hover {
+    transform: scale(1.08);
+  }
+}

@@ -1,7 +1,7 @@
 .banner {
   color: white;
   object-fit: contain;
-  height: 448px; /* Standard Netflix height */
+  height: 458px; /* Standard Netflix height */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -78,4 +78,27 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .banner_contents {
+    padding-top: 100px;
+    height: 150px;
+  }
+  .banner_title {
+    font-size: 1.8rem; /* Smaller title for mobile */
+  }
+  .banner_description {
+    width: 80%; /* Takes up more relative width on small screens */
+    font-size: 0.7rem;
+  }
+  .banner_button {
+    padding: 0.4rem 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .banner_button,.banner_mylist {
+    padding: 0.4rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+  
 }
