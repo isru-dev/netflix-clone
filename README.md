@@ -23,4 +23,4 @@ A high-performance Netflix front-end clone built with **React**, featuring real-
 3.  Create an account at [themoviedb.org](https://www.themoviedb.org/) to get an API Key.
 4.  Add your key to `requests.js`.
 5.  Launch with `npm run dev`.
-
+https://netflix-cloneisru.vercel.app/
